@@ -1,0 +1,21 @@
+<form action="">
+  <input 
+    type="email" 
+    placeholder="Digite seu email"
+    required
+    multiple
+    minlength="8"
+    maxlength="35"
+    size="17"
+    pattern=".+@barolo\.dev\.br"
+    title="Somente e-mails barolo.dev.br serão aceitos"
+  >
+  <datalist id="emaillist">
+    <option>helio@barolo.dev.br</option>
+  </datalist>
+  <input 
+    type="email"
+    list="emaillist"
+  >
+  <button type="submit">Enviar</button>
+</form>
