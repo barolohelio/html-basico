@@ -185,3 +185,60 @@ o exemplo de código acima.
   * principal
   * cruzado
 * espaços entre os itens
+
+## Direção dos itens
+
+- Flex é uma dimensão (horizontal ou vertical)
+- podemos mudar a direção com `flex-direction`
+- valores: (row | row-reverse | column | column-reverse)
+
+```css
+.container {
+  display: flex;
+  flex-direction: column;
+}
+```
+- Display flex tem por padrão sua direção em linha row | flex-direction: row;
+- Linha reversa que é lida da direita pra esquerda igual Árabe ou Manga né |      flex-direction: row-reverse;
+- Podemos mudar para coluna | flex-direction: column;
+- Já em coluna reversa de baixo para cima | flex-direction: column-reverse;
+
+```html
+<div class="container">
+  <div class="item">A</div>
+  <div class="item">B</div>
+  <div class="item">C</div>
+</div>
+```
+
+## flex-wrap
+
+- Podemos usar multi linhas
+- Cada nova linha, um novo elemento flex container
+
+```css
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px dashed red;
+}
+.box div{
+  border: 1px solid;
+
+  width: 90px;
+}
+```
+
+- Com o flex wrap, caso não tenha espaço na linha para todos os conteúdos, ele vai criar uma nova linha. Como se fosse um novo eixo main(Horizontal)
+
+- Podendo inverter a ordem dos conteúdos com o flex-wrap: wrap-reverse;
+
+```html
+<div class="box">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+</div>
+```
