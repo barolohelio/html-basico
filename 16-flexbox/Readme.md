@@ -358,7 +358,7 @@ o exemplo de código acima.
   <div>A</div>
   <div>B</div>
   <div>C</div>
-  <div>D</div>
+  <div>D </div> 
 </div>
 ```
 
