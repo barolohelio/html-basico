@@ -470,3 +470,24 @@ flexíveis: %, em, rem
   <div id="child-number-04">D</div>
 </div>
 ```
+
+## flex-shrink
+
+- O encolher do item dentro do container.
+
+```css
+.box {
+  display: flex;
+  border: 1px dashed red;
+
+  width: 160px;
+}
+
+.box div{
+  flex-basis: 100%;
+  border: 1px solid;
+}
+
+.box div:nth-child(2){
+  
+}
