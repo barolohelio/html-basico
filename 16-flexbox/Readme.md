@@ -401,3 +401,72 @@ flexíveis: %, em, rem
 - flex
 - order
 
+### * OBS: Atenção ao eixo principal(flex-direction: column ou row)
+
+- flex-basis
+  - Por padrão é auto, o conteúdo define o tamanho da caixa. Nele podemos estabelecer o espaço dos filhos com base no eixo escolhido(flex-direction: row ou column)
+  - Quando escolhemos o tamanho no flex-basis, não é possível alterar de novo diretamente utilizando outro seletor. 
+
+```css
+.box{
+  display: flex; 
+  border: 1px dashed red; 
+}
+
+.box div{
+  border: 1px solid;
+  flex-basis: 10%;
+}
+
+.box div:nth-child(1){
+  width: 250px;
+}
+
+#child-number-04{
+  width: 250px;
+}
+```
+
+```html
+<div class="box">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div id="child-number-04">D</div>
+</div>
+```
+
+## flex-grow
+
+- O crescimento do item dentro do container em relação aos espaços vazios.
+- flex-grow por padrão é 0, não cresce em ralação a nada o 1 pega todo o espaço vazio. É possível aplicar 1 em todos para dividir o espaço por igual ou então fracionar, por exemplo, dividindo 4 partes de espaço vazio em 2/4 1/4 1/4.  
+  -
+
+```css
+.box{
+  display: flex; 
+  border: 1px dashed red; 
+}
+
+.box div{
+  border: 1px solid;
+  flex-basis: 10%;
+}
+
+.box div:nth-child(2),
+.box div:nth-child(3){
+  /* flex-grow: 1; */
+}
+
+.box div:nth-child(1){
+  flex-grow: 2;
+}
+```
+```html
+<div class="box">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div id="child-number-04">D</div>
+</div>
+```
