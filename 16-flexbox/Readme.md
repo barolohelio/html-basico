@@ -375,7 +375,7 @@ flexíveis: %, em, rem
 ```css
 .box{
   display: flex; 
-  border: 1px dashed red;
+  border: 1px dashed red; 
   gap: 2px;
 }
 
