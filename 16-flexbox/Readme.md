@@ -439,8 +439,8 @@ flexíveis: %, em, rem
 ## flex-grow
 
 - O crescimento do item dentro do container em relação aos espaços vazios.
+
 - flex-grow por padrão é 0, não cresce em ralação a nada o 1 pega todo o espaço vazio. É possível aplicar 1 em todos para dividir o espaço por igual ou então fracionar, por exemplo, dividindo 4 partes de espaço vazio em 2/4 1/4 1/4.  
-  -
 
 ```css
 .box{
