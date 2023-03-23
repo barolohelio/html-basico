@@ -242,3 +242,153 @@ o exemplo de código acima.
   <div>E</div>
 </div>
 ```
+
+# flew-flow 
+
+- shorthand
+- flex-direction || flex-wrap
+
+```html
+<div class="box">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+</div>
+```
+
+- Posso colocar uma ou mais propriedades no flex flow
+  - flex-flow: column; - Ele está fazendo a função do flex-direction
+  - flex-flow: wrap; - função do flex-wrap; 
+- Com mais de uma propriedade:
+  - flex-flow: column wrap;
+  - flex-flow: row wrap;
+
+```css
+.box{
+  display: flex;
+  flex-flow: column;
+  border: 1px dashed red;
+}
+
+.box div {
+  border: 1px solid;
+  width: 80px;
+}
+```
+
+## justify-content
+
+- Alinhamento dos elementos dentro do container
+- Distribuição dos elementos
+
+## valores
+
+- flex-start
+  - Inicio do eixo
+- flex-end
+  - Final do eixo
+- center
+  - Centralizado do eixo
+- space-around
+  - espaço por igual ao redor dos itens
+- space-between
+  - espaço entre eles, o primeiro fica colado a esq e ultimo colado a direita
+- space-evenly
+  - espaço por igual entre os conteúdos
+
+* Observação caso o flex-direction esteja configurado com column o eixo vai estar na vertical e não no padrão main(Horizontal)
+
+```css
+.box{
+  display: flex;
+  border: 1px dashed red;
+  justify-content: flex-start;
+}
+
+.box div{
+  border: 1px solid;
+}
+
+```
+
+```html
+<div class="box">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+</div>
+```
+
+## align-items
+
+- Alinhamento dos elementos no eixo cruzado
+
+### valores
+
+- stretch
+  - Os filhos esticados no eixo cruzado(Vertical) 
+- flex-start
+  - Deixa os elementos no começo do eixo cruzado(Vertical)
+- flex-end
+  - Deixa os elementos no final do eixo cruzado(Vertical)
+- center
+  - Deixa os elementos no 
+
+* OBS: caso coloque flex-direction: column;  o eixo cruzado será na Horizontal. 
+
+```css
+.box{
+  display: flex; 
+  align-items: stretch;
+
+  border: 1px dashed red;
+  height: 150px;
+}
+
+.box div{
+  border: 1px solid;
+}
+```
+
+```html
+<div class="box">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+</div>
+```
+
+## gap
+
+- Espaços entre os elementos.
+
+### valores
+
+Unidade de medidas
+fixas: px, pt
+flexíveis: %, em, rem
+
+```css
+.box{
+  display: flex; 
+  border: 1px dashed red;
+  gap: 2px;
+}
+
+.box div{
+  border: 1px solid;
+}
+```
+
+```html
+<div class="box">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+</div>
+```
