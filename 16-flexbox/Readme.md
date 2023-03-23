@@ -150,3 +150,38 @@ o exemplo de código acima.
   <div class="item">C</div>
 </div>
 ```
+
+## Flex sizing
+
+- Altera a largura e altura dos intens para preenchimento dos espaços do flex container.
+
+```css
+ .container {
+  display: flex;
+  border: 1px solid red;
+  height: 200px;
+ }
+
+ .item{
+  background-color: gray;
+  border: 1px solid;
+  flex: 1;
+ }
+```
+
+```html
+<div class="container">
+  <div class="item">A</div>
+  <div class="item">B</div>
+  <div class="item">C</div>
+</div>
+```
+
+# Propriedades do flex container
+
+* Direção dos itens 
+* Multi linhas
+* alinhamento
+  * principal
+  * cruzado
+* espaços entre os itens
