@@ -80,11 +80,11 @@ IP do server.
 
 ## VERSIONAMENTO DE CÓDIGO - GitHub, GitLab e DockerHub
 
-[DockerHub](https://hub.docker.com/u/barolohelio)
+ <a href="https://hub.docker.com/u/barolohelio" target="_blank">DockerHub</a>
 
-[Github](https://github.com/barolohelio)
+ <a href="https://github.com/barolohelio" target="_blank">Github</a>
 
-[Gitlab](https://gitlab.com/barolohelio)
+ <a href="https://gitlab.com/barolohelio" target="_blank">Gitlab</a>
 
 ## Dashboard para os projetos em desenvolvimento - Aguarde please
    
