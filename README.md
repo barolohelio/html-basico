@@ -27,9 +27,9 @@ IP do server.
 
 ## Links de projetos paralelos ao curso. 
 
- <a href="https://gcp-1029-teste.barolo.dev.br">Conversor de Moedas</a>
+ <a href="https://gcp-1029-teste.barolo.dev.br" target="_blank">Conversor de Moedas</a>
  
- <a href="https://projetos-html.barolo.dev.br/">Tela de login</a>
+ <a href="https://projetos-html.barolo.dev.br/" target="_blank">Tela de login</a>
  
 ## Links de estudos realizados no curso 🚀 Rocketseat - Cursos estelares
 
