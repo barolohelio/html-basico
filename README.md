@@ -33,7 +33,7 @@ IP do server.
  
 ## Links de estudos realizados no curso 🚀 Rocketseat - Cursos estelares
 
-  -  <a href="https://projetos-html.barolo.dev.br/01-posicionamento/">Posicionamento (absolute, fixed, relative, element stackin)</a>
+  -  <a href="https://projetos-html.barolo.dev.br/01-posicionamento/" target="_blank">Posicionamento (absolute, fixed, relative, element stackin)</a>
     - <a href="https://github.com/barolohelio/html-basico/blob/master/01-posicionamento/pagelayouts.md">Readme</a>
     
   -  <a href="https://projetos-html.barolo.dev.br/01-posicionamento/empilhamento.html">Posicionamento (absolute, fixed, relative, element stacking)</a>
