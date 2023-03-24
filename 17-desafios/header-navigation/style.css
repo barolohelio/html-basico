@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header{
+  padding: 2rem;
+  background: lightgray;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+ul li:last-child{
+  background: black;
+  color: white;
+  padding: 0.8rem;
+}

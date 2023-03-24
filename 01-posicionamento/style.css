@@ -1,0 +1,27 @@
+.box{
+  width: 200px;
+  height: 200px;
+  margin: 15px;
+}
+
+main{
+  margin-top: 200px;
+  position: relative;
+}
+
+.box1{
+  background-color: red;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+.box2{
+  background-color: yellow;
+  left: 200px;
+}
+
+.box3{
+  background-color: green;
+}
+

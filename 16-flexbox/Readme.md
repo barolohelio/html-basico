@@ -405,7 +405,7 @@ flexíveis: %, em, rem
 
 - flex-basis
   - Por padrão é auto, o conteúdo define o tamanho da caixa. Nele podemos estabelecer o espaço dos filhos com base no eixo escolhido(flex-direction: row ou column)
-  - Quando escolhemos o tamanho no flex-basis, não é possível alterar de novo diretamente utilizando outro seletor. 
+  - Quando escolhemos o tamanho no flex-basis, não é possível alterar de novo diretamente, mesmo utilizando outro seletor. 
 
 ```css
 .box{
@@ -474,6 +474,25 @@ flexíveis: %, em, rem
 ## flex-shrink
 
 - O encolher do item dentro do container.
+- Por padrão ele vem como 1, com encurtamento em relação os filhos dentro da caixa.
+  - No exemplo de código abaixo, foi definido o tamanho da caixa de 160px e depois
+  utilizando o flex-basis foi definido tamanho de 100% para cada filho no eixo main
+  - Já quando pegamos o filho(2) e estabelecemos o valor de flex-shrink: 0;
+  ele parou de encurtar o item, com isso ele ocupou todo o espaço livre.
+  - E quando definimos flex-shrink: 2; para o filho(2), ele fica somente com o 
+  espaço do seu conteúdo e o restante fica com flex-shrink: 1; então eles vão se 
+  encurtar e pegar todo o espaço livre. 
+
+- Se tiver um valor que é compatível para divisão invés de 100%, como por exemplo 160/40px para cada filho, e colocar o flex-shrink: 2; para os filhos(2) e (3) não faz 
+muita diferença, eles vão se encurtar um pouco ficando com 39.33px e o restante com 40.67px.
+- Já quando colocamos um valor que não é compatível com divisão como por exemplo, 
+160/45, os filhos com flex-shrink: 2; que é (2) e (3) vão se encolher, para que
+o restante fique com mais espaço.
+
+### Resumindo 
+
+- Quando menor o número, maior será o conteúdo, pois não será encurtado. 
+
 
 ```css
 .box {
@@ -484,10 +503,26 @@ flexíveis: %, em, rem
 }
 
 .box div{
-  flex-basis: 100%;
+  /* flex-basis: 100%; */
+  flex-basis: 40px;
   border: 1px solid;
 }
 
-.box div:nth-child(2){
-  
+/* .box div:nth-child(2){
+ flex-shrink: 0;
+} */
+
+.box div:nth-child(2),
+.box div:nth-child(3){
+ flex-shrink: 2;
 }
+```
+```html
+<div class="box">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div >D</div>
+</div>
+```
+
