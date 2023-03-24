@@ -78,7 +78,7 @@ IP do server.
    
    -  <a href="https://projetos-html.barolo.dev.br/17-desafios/layout-2-colunas/">Layout com 02 colunas</a>
 
-# VERSIONAMENTO DE CÓDIGO - GitHub, GitLab e DockerHub
+## VERSIONAMENTO DE CÓDIGO - GitHub, GitLab e DockerHub
 
 [DockerHub](https://hub.docker.com/u/barolohelio)
 
