@@ -26,14 +26,12 @@ pois o domínio principal já possuí aplicação. Em relação a segurança, fo
 IP do server.
 
 ## Links de projetos paralelos ao curso. 
-
- <a href="https://gcp-1029-teste.barolo.dev.br" target="_blank">Conversor de Moedas</a>
  
- <a href="https://projetos-html.barolo.dev.br/" target="_blank">Tela de login</a>
+ <a href="https://barolo.dev.br/00-tela-de-login/" target="_blank">Tela de login</a>
  
 ## Links de estudos realizados no curso 🚀 Rocketseat - Cursos estelares
 
-  -  <a href="https://projetos-html.barolo.dev.br/01-posicionamento/" target="_blank">Posicionamento (absolute, fixed, relative, element stackin)</a>
+  -  <a href="https://barolo.dev.br/01-posicionamento/" target="_blank">Posicionamento (absolute, fixed, relative, element stackin)</a>
     - <a href="https://github.com/barolohelio/html-basico/blob/master/01-posicionamento/pagelayouts.md" target="_blank">Readme</a>
     
   -  <a href="https://projetos-html.barolo.dev.br/01-posicionamento/empilhamento.html" target="_blank">Posicionamento (absolute, fixed, relative, element stacking)</a>
